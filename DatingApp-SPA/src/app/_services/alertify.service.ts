@@ -9,7 +9,7 @@ export class AlertifyService {
 
   confirm(message: string, okCallback: () => any) {
     alertify.confirm(message, (e: any) => {
-      if(e) {
+      if (e) {
         okCallback();
       }
     });
@@ -30,5 +30,4 @@ export class AlertifyService {
   message(message: string) {
     alertify.message(message);
   }
-
 }
